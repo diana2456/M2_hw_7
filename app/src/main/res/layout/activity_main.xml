@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/conteiner"
+        app:layout_constraintBottom_toTopOf="@id/margin_linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginHorizontal="36dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="80sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/margin_linearLayout"
+        android:layout_width="313dp"
+        android:layout_height="431dp"
+        android:layout_marginTop="290dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnClear"
+                style="@style/first_btn_style"
+                android:layout_marginStart="34dp"
+                android:drawableStart="@drawable/ac"
+                android:onClick="onNumberClick"
+                android:paddingStart="16dp"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_text_blackground"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnCter"
+                style="@style/first_btn_style"
+                android:layout_marginStart="32dp"
+                android:onClick="onOperation"
+                android:drawableStart="@drawable/ic_baseline_backspace_24"
+                android:paddingStart="20dp" />
+
+            <Button
+                android:id="@+id/btnD"
+                style="@style/first_bly_btn_style"
+                android:layout_marginStart="32dp"
+                android:drawableStart="@drawable/hhh"
+                android:fontFamily="@font/notosansjp_light"
+                android:onClick="onOperation"
+                android:paddingStart="21dp"
+                android:textColor="@color/btn_text_bly_blackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/first_black_btn_style"
+                android:layout_marginStart="34dp"
+                android:id="@+id/btn7"
+                android:text="7"
+                android:textColor="@color/btn_text_black_blackround" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/first_black_btn_style"
+                android:layout_marginStart="32dp"
+                android:text="8"
+                android:textColor="@color/btn_text_black_blackround" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/first_black_btn_style"
+                android:layout_marginStart="32dp"
+                android:text="9"
+                android:textColor="@color/btn_text_black_blackround" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/first_black_btn_style"
+                android:layout_marginStart="34dp"
+                android:text="4"
+                android:textColor="@color/btn_text_black_blackround" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/first_black_btn_style"
+                android:layout_marginStart="32dp"
+                android:text="5"
+                android:textColor="@color/btn_text_black_blackround" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/first_black_btn_style"
+                android:layout_marginStart="32dp"
+                android:text="6"
+                android:textColor="@color/btn_text_black_blackround" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/first_black_btn_style"
+                android:layout_marginStart="34dp"
+                android:text="1"
+                android:textColor="@color/btn_text_black_blackround" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/first_black_btn_style"
+                android:layout_marginStart="32dp"
+                android:text="2"
+                android:textColor="@color/btn_text_black_blackround" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/first_black_btn_style"
+                android:layout_marginStart="32dp"
+                android:text="3"
+                android:textColor="@color/btn_text_black_blackround" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="156dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="34dp"
+                android:background="@drawable/btn_black_blackground"
+                android:text="0"
+                android:textColor="@color/btn_text_black_blackround"
+                android:textSize="22dp" />
+
+            <Button
+                android:id="@+id/btnTochka"
+                style="@style/first_black_btn_style"
+                android:layout_marginStart="42dp"
+                android:drawableStart="@drawable/cc"
+                android:paddingStart="29dp"
+                android:textColor="@color/btn_text_black_blackround" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="87dp"
+        android:layout_height="431dp"
+        android:layout_marginTop="290dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/margin_linearLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="87dp"
+            android:layout_height="435dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnX"
+                style="@style/first_bly_btn_style"
+                android:drawableStart="@drawable/jj"
+                android:paddingStart="23dp" />
+
+            <Button
+                android:id="@+id/btnMinys"
+                style="@style/first_bly_btn_style"
+                android:layout_marginTop="22dp"
+                android:drawableStart="@drawable/gg"
+                android:paddingStart="23dp"
+                android:textColor="@color/btn_text_black_blackround" />
+
+            <Button
+                android:id="@+id/btnPlus"
+                android:layout_width="62dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_bly_backround"
+                android:drawableStart="@drawable/ee"
+                android:paddingStart="23dp" />
+
+            <Button
+                android:id="@+id/btnRavno"
+                android:layout_width="62dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_blyy_blackraund"
+                android:drawableStart="@drawable/ss"
+                android:paddingStart="23dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
