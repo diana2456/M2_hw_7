@@ -21,10 +21,9 @@
             android:layout_gravity="bottom|end"
             android:layout_marginHorizontal="36dp"
             android:ellipsize="end"
-            android:maxLines="1"
             android:text="0"
             android:textColor="@color/white"
-            android:textSize="80sp" />
+            android:textSize="60sp" />
     </FrameLayout>
 
     <LinearLayout
